@@ -385,7 +385,7 @@ article#pages-articles div#pages-articles-articles div.article:first-child {
   margin-left: 0
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-title {
+article#pages-articles div#pages-articles-articles div.article div.title {
   font-size: 15px;
   line-height: 20px;
   top: 25px;
@@ -393,7 +393,7 @@ article#pages-articles div#pages-articles-articles div.article div.article-title
   position: absolute;
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-body {
+article#pages-articles div#pages-articles-articles div.article div.body {
   top: 65px;
   width: 230px;
   left: 25px;
@@ -403,7 +403,7 @@ article#pages-articles div#pages-articles-articles div.article div.article-body 
   letter-spacing: 0;
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-date {
+article#pages-articles div#pages-articles-articles div.article div.date {
   color: #c8c8c8;
   bottom: 25px;
   left: 25px;
@@ -412,7 +412,7 @@ article#pages-articles div#pages-articles-articles div.article div.article-date 
   font-weight: bold;
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-continue {
+article#pages-articles div#pages-articles-articles div.article div.continue {
   bottom: 25px;
   right: 25px;
   position: absolute;
@@ -422,7 +422,7 @@ article#pages-articles div#pages-articles-articles div.article span.p {
   font-family: Praktika
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-more {
+article#pages-articles div#pages-articles-articles div.article div.more {
   text-align: center;
   top: 50%;
   width: 100%;
@@ -430,10 +430,10 @@ article#pages-articles div#pages-articles-articles div.article div.article-more 
   margin-top: -25px
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-more img {
+article#pages-articles div#pages-articles-articles div.article div.more img {
   height: 30px
 }
 
-article#pages-articles div#pages-articles-articles div.article div.article-more div.article-more-text {
+article#pages-articles div#pages-articles-articles div.article div.more div.text {
   font-family: Praktika;
 }
