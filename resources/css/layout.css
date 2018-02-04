@@ -483,7 +483,13 @@ article#pages-products div.repository div.url {
 }
 
 article#pages-products div.mockup {
-  width: 750px;
+  width: 760px;
+  height: 345px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -172.5px;
+  margin-left: -380px;
 }
 
 article#pages-products div.mockup:after {
@@ -492,4 +498,143 @@ article#pages-products div.mockup:after {
   height: 0;
   visibility: hidden;
   content: '.'
+}
+
+article#pages-products div.mockup div.pc {
+  width: 560px;
+  height: 345px;
+  box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
+  float: left;
+  border-radius: 3px;
+}
+
+article#pages-products div.mockup div.pc div.header {
+  width: 560px;
+  height: 30px;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient( #FFFFFF, #FAFAFA );
+}
+
+article#pages-products div.mockup div.pc div.header div.buttons {
+  padding: 11px 0;
+  padding-left: 10px;
+}
+
+article#pages-products div.mockup div.pc div.header div.buttons div.button {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin-left: 5px;
+  float: left;
+}
+
+article#pages-products div.mockup div.pc div.header div.buttons div.button:first-child {
+  margin-left: 0;
+}
+
+article#pages-products div.mockup div.pc div.header div.buttons div.button.red {
+  background: #FC605C;
+}
+
+article#pages-products div.mockup div.pc div.header div.buttons div.button.yellow {
+  background: #FDBC40
+}
+
+article#pages-products div.mockup div.pc div.header div.buttons div.button.green {
+  background: #34C749
+}
+
+article#pages-products div.mockup div.pc div.screen {
+  width: 560px;
+  height: 315px;
+  background: linear-gradient( to right bottom, #FFFFFF, #F5F5F5 );
+  border-radius: 0 0 3px 3px;
+  text-align: center;
+  position: relative;
+}
+
+article#pages-products div.mockup div.pc div.screen img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 0 0 3px 3px;
+  padding: 0;
+  margin: 0;
+}
+
+article#pages-products div.mockup div.pc div.screen div {
+  width: 100%;
+  font-family: Praktika;
+  color: #c8c8c8;
+  font-size: 15px;
+  line-height: 18px;
+  top: 148.5px;
+  left: 0;
+  position: absolute;
+}
+
+/* SP */
+
+article#pages-products div.mockup div.sp {
+  width: 150px;
+  box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
+  float: left;
+  margin-top: 76.2px;
+  border-radius: 3px;
+  margin-left: 50px;
+}
+
+article#pages-products div.mockup div.sp div.statusbar {
+  background: #fff;
+  height: 5px;
+  padding: 2.5px 5px;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+}
+
+
+article#pages-products div.mockup div.sp div.statusbar img {
+  height: 5px;
+  float: left
+}
+
+article#pages-products div.mockup div.sp div.statusbar img.icon-wifi {
+  margin-left: 2.5px
+}
+
+article#pages-products div.mockup div.sp div.statusbar img.icon-battery {
+  float: right
+}
+
+article#pages-products div.mockup div.sp div.screen {
+  width: 150px;
+  height: 258.8px;
+  background: linear-gradient( to right bottom, #FFFFFF, #F5F5F5 );
+  border-radius: 0 0 3px 3px;
+  position: relative;
+}
+
+article#pages-products div.mockup div.sp div.screen img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 0 0 3px 3px;
+  padding: 0;
+  margin: 0;
+}
+
+article#pages-products div.mockup div.sp div.screen div {
+  width: 150px;
+  font-family: Praktika;
+  color: #c8c8c8;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  top: 111.4px;
+  left: 0;
+  position: absolute;
 }
