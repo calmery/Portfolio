@@ -437,3 +437,59 @@ article#pages-articles div#pages-articles-articles div.article div.more img {
 article#pages-articles div#pages-articles-articles div.article div.more div.text {
   font-family: Praktika;
 }
+
+/* Products */
+
+article#pages-products div.information {
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-family: Praktika
+}
+
+article#pages-products div.information div.name {
+  font-size: 25px;
+  line-height: 31px;
+}
+
+article#pages-products div.information div.date {
+  font-size: 15px;
+  line-height: 18px;
+  color: #c8c8c8
+}
+
+article#pages-products div.description {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  font-family: Smart;
+  width: 300px;
+}
+
+article#pages-products div.description span.p {
+  font-family: Praktika
+}
+
+article#pages-products div.repository {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-family: Praktika;
+  text-align: right;
+}
+
+article#pages-products div.repository div.url {
+  color: #c8c8c8
+}
+
+article#pages-products div.mockup {
+  width: 750px;
+}
+
+article#pages-products div.mockup:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: '.'
+}
