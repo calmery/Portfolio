@@ -4,7 +4,7 @@
 // Copyright (c) 2016 Alvaro Trigo <alvaro@alvarotrigo.com>
 // Released under the MIT license
 // https://github.com/alvarotrigo/fullPage.js/blob/master/LICENSE
-( _ => {
+export default _ => {
   let isScroll = false
 
   const container = document.querySelector( '#pages' )
@@ -142,4 +142,4 @@
       scrollPage( page )
     )
   } )
-} )()
+}

@@ -6,4 +6,4 @@ const updatePosition = _ => {
   secondary.style.marginTop = `-${secondary.offsetHeight/2}px`
 }
 
-updatePosition()
+export default updatePosition
