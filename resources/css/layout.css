@@ -111,7 +111,7 @@ nav#secondary {
   top: 50%;
   right: 75px;
   text-align: right;
-  position: absolute;
+  position: fixed;
   z-index: 6;
 }
 

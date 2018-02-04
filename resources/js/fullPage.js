@@ -24,6 +24,15 @@
   let previousTime = new Date().getTime()
   let scrollings = []
 
+  const setActiveMenu = activeMenu => {
+    _ = [].slice.call( document.querySelectorAll( 'nav#primary div.menu' ) ).forEach( menu => {
+      menu.classList.remove( 'active' )
+
+      if( menu === activeMenu )
+        menu.classList.add( 'active' )
+    } )
+  }
+
   const getAverage = ( elements, number ) => {
     const lastElements = elements.slice( Math.max( elements.length - number, 1 ) )
     return Math.ceil( ( lastElements.length ? lastElements.reduce( ( x, y ) => x + y ) : 0 ) / number )
@@ -56,7 +65,6 @@
   // Touch Device
 
   let touchStartY = 0
-  let touchEndY = 0
 
   if( 'ontouchstart' in window ){
     document.body.addEventListener( 'touchmove', _ => _ )
@@ -66,9 +74,9 @@
 
       page.addEventListener( 'touchmove', event => {
         if( !isScroll && Math.abs( touchStartY - event.touches[0].pageY ) > ( innerHeight / 500 ) )
-          if( touchStartY > touchEndY )
+          if( touchStartY > event.touches[0].pageY )
             movePageDown()
-          else
+          else if( event.touches[0].pageY > touchStartY )
             movePageUp()
       }, false )
     } )
@@ -85,6 +93,10 @@
 
   const scrollPage = element => {
     if( null === element ) return
+
+    const pageId = element.id.slice( 6 )
+    const activeMenu = document.querySelector( `div#primary-${pageId}` )
+    setActiveMenu( activeMenu )
 
     applyToEachPage( page => page.classList.remove( 'active' ) )
     element.classList.add( 'active' )
@@ -123,4 +135,11 @@
   } )
 
   updateHeight()
+
+  _ = [].slice.call( document.querySelectorAll( 'nav#primary div.menu' ) ).forEach( menu => {
+    const page = document.querySelector( `article#pages-${menu.id.slice( 8 )}` )
+    menu.addEventListener( 'click', _ =>
+      scrollPage( page )
+    )
+  } )
 } )()
