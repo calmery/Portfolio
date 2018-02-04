@@ -1,8 +1,5 @@
 import Elm from './elm/Main.elm'
 
-import './static/css/font/Praktika-Black.woff'
-import './static/css/font/Praktika-Bold.woff'
-import './static/css/font/SmartFontUI.woff'
 import './static/index.html'
 
 import 'normalize.css'
