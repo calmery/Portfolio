@@ -641,7 +641,7 @@ article#pages-products div.mockup div.sp div.screen div {
 
 /* Experiences */
 
-article#pages-experiences div#experiences-line {
+article#pages-experiences div#pages-experiences-line {
   top: 10px;
   left: 350px;
   background: #646464;
@@ -651,7 +651,7 @@ article#pages-experiences div#experiences-line {
   height: calc( 100% - 10px - 20px );
 }
 
-article#pages-experiences div#experiences-line-bottom {
+article#pages-experiences div#pages-experiences-line-bottom {
   bottom: 0;
   left: 350px;
   background: #646464;
@@ -661,11 +661,11 @@ article#pages-experiences div#experiences-line-bottom {
   height: 15px;
 }
 
-article#pages-experiences div.content {
+article#pages-experiences div#pages-experiences-contents div.content {
   margin-bottom: 50px;
 }
 
-article#pages-experiences div.content:after {
+article#pages-experiences div#pages-experiences-contents div.content:after {
   display: block;
   clear: both;
   height: 0;
@@ -673,7 +673,7 @@ article#pages-experiences div.content:after {
   content: '.'
 }
 
-article#pages-experiences div.content div.left {
+article#pages-experiences div#pages-experiences-contents div.content div.left {
   text-align: right;
   width: 315px;
   padding-top: 4px;
@@ -681,17 +681,17 @@ article#pages-experiences div.content div.left {
   float: left
 }
 
-article#pages-experiences div.content div.left div.date {
+article#pages-experiences div#pages-experiences-contents div.content div.left div.date {
   font-family: Praktika;
   color: #c8c8c8
 }
 
-article#pages-experiences div.content div.middle {
+article#pages-experiences div#pages-experiences-contents div.content div.middle {
   width: 75px;
   float: left
 }
 
-article#pages-experiences div.content div.middle div.circle div.inner-circle {
+article#pages-experiences div#pages-experiences-contents div.content div.middle div.circle div.inner-circle {
   width: 15px;
   height: 15px;
   margin: 2.5px;
@@ -699,7 +699,7 @@ article#pages-experiences div.content div.middle div.circle div.inner-circle {
   border-radius: 100%;
 }
 
-article#pages-experiences div.content div.middle div.circle {
+article#pages-experiences div#pages-experiences-contents div.content div.middle div.circle {
   border-radius: 100%;
   width: 20px;
   height: 20px;
@@ -708,7 +708,7 @@ article#pages-experiences div.content div.middle div.circle {
   background: #fff
 }
 
-article#pages-experiences div.content div.right {
+article#pages-experiences div#pages-experiences-contents div.content div.right {
   float: left;
   width: 560px;
   padding-top: 4px;
@@ -716,11 +716,11 @@ article#pages-experiences div.content div.right {
   font-family: Smart;
 }
 
-article#pages-experiences div.content div.right div.description {
+article#pages-experiences div#pages-experiences-contents div.content div.right div.description {
   margin-top: 5px;
 }
 
-article#pages-experiences div.content div.right div.url {
+article#pages-experiences div#pages-experiences-contents div.content div.right div.url {
   font-family: Praktika;
   color: #c8c8c8
 }
