@@ -724,3 +724,47 @@ article#pages-experiences div.content div.right div.url {
   font-family: Praktika;
   color: #c8c8c8
 }
+
+/* Archives */
+
+article#pages-archives div#pages-archives-title {
+  font-size: 25px;
+  line-height: 33px;
+  font-family: Praktika;
+  font-weight: bold;
+}
+
+article#pages-archives div#pages-archives-container {
+  margin-top: 50px;
+}
+
+article#pages-archives div#pages-archives-container:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: '.'
+}
+
+article#pages-archives div#pages-archives-container div.left {
+  width: 450px;
+  float: left;
+}
+
+article#pages-archives div#pages-archives-container div.right {
+  width: 450px;
+  float: right;
+}
+
+article#pages-archives div#pages-archives-container div.content {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+article#pages-archives div#pages-archives-container div.content div.url {
+  color: #c8c8c8;
+}
+
+article#pages-archives div#pages-archives-container div.content span.p {
+  font-family: Praktika
+}
