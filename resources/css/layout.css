@@ -334,3 +334,106 @@ article#pages-aboutme div#pages-aboutme-container .text {
   font-size: 15px;
   line-height: 18px;
 }
+
+/* Articles */
+
+article#pages-articles-container {
+  padding: 0 5px;
+}
+
+article#pages-articles div#pages-articles-title {
+  font-size: 25px;
+  line-height: 33px;
+  font-family: Praktika;
+  font-weight: bold;
+}
+
+article#pages-articles div#pages-articles-description {
+  font-family: Praktika;
+  font-weight: bold;
+  color: #c8c8c8;
+}
+
+article#pages-articles div#pages-articles-articles {
+  top: 50%;
+  height: 210px;
+  margin-top: -105px;
+  position: absolute;
+}
+
+article#pages-articles div#pages-articles-articles:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: '.'
+}
+
+article#pages-articles div#pages-articles-articles div.article {
+  width: 280px;
+  height: 210px;
+  box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
+  background: #ffffff;
+  float: left;
+  margin-left: 50px;
+  border-radius: 3px;
+  font-family: Smart;
+  position: relative;
+}
+
+article#pages-articles div#pages-articles-articles div.article:first-child {
+  margin-left: 0
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-title {
+  font-size: 15px;
+  line-height: 20px;
+  top: 25px;
+  left: 25px;
+  position: absolute;
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-body {
+  top: 65px;
+  width: 230px;
+  left: 25px;
+  position: absolute;
+  height: 84px;
+  color: #c8c8c8;
+  letter-spacing: 0;
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-date {
+  color: #c8c8c8;
+  bottom: 25px;
+  left: 25px;
+  position: absolute;
+  font-family: Praktika;
+  font-weight: bold;
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-continue {
+  bottom: 25px;
+  right: 25px;
+  position: absolute;
+}
+
+article#pages-articles div#pages-articles-articles div.article span.p {
+  font-family: Praktika
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-more {
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  margin-top: -25px
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-more img {
+  height: 30px
+}
+
+article#pages-articles div#pages-articles-articles div.article div.article-more div.article-more-text {
+  font-family: Praktika;
+}
