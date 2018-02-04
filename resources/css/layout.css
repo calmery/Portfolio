@@ -725,20 +725,20 @@ article#pages-experiences div.content div.right div.url {
   color: #c8c8c8
 }
 
-/* Archives */
+/* Archives and Credit */
 
-article#pages-archives div#pages-archives-title {
+article#pages-archives div#pages-archives-title, article#pages-credit div#pages-credit-title {
   font-size: 25px;
   line-height: 33px;
   font-family: Praktika;
   font-weight: bold;
 }
 
-article#pages-archives div#pages-archives-container {
+article#pages-archives div#pages-archives-container, article#pages-credit div#pages-credit-container {
   margin-top: 50px;
 }
 
-article#pages-archives div#pages-archives-container:after {
+article#pages-archives div#pages-archives-container:after, article#pages-credit div#pages-credit-container:after {
   display: block;
   clear: both;
   height: 0;
@@ -746,25 +746,25 @@ article#pages-archives div#pages-archives-container:after {
   content: '.'
 }
 
-article#pages-archives div#pages-archives-container div.left {
+article#pages-archives div#pages-archives-container div.left, article#pages-credit div#pages-credit-container div.left {
   width: 450px;
   float: left;
 }
 
-article#pages-archives div#pages-archives-container div.right {
+article#pages-archives div#pages-archives-container div.right, article#pages-credit div#pages-credit-container div.right {
   width: 450px;
   float: right;
 }
 
-article#pages-archives div#pages-archives-container div.content {
+article#pages-archives div#pages-archives-container div.content, article#pages-credit div#pages-credit-container div.content {
   width: 450px;
   margin-bottom: 20px;
 }
 
-article#pages-archives div#pages-archives-container div.content div.url {
+article#pages-archives div#pages-archives-container div.content div.url, article#pages-credit div#pages-credit-container div.content div.url {
   color: #c8c8c8;
 }
 
-article#pages-archives div#pages-archives-container div.content span.p {
+article#pages-archives div#pages-archives-container div.content span.p, article#pages-credit div#pages-credit-container div.content span.p {
   font-family: Praktika
 }
