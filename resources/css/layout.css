@@ -638,3 +638,89 @@ article#pages-products div.mockup div.sp div.screen div {
   left: 0;
   position: absolute;
 }
+
+/* Experiences */
+
+article#pages-experiences div#experiences-line {
+  top: 10px;
+  left: 350px;
+  background: #646464;
+  border-radius: 3px;
+  position: absolute;
+  width: 5px;
+  height: calc( 100% - 10px - 20px );
+}
+
+article#pages-experiences div#experiences-line-bottom {
+  bottom: 0;
+  left: 350px;
+  background: #646464;
+  border-radius: 3px;
+  position: absolute;
+  width: 5px;
+  height: 15px;
+}
+
+article#pages-experiences div.content {
+  margin-bottom: 50px;
+}
+
+article#pages-experiences div.content:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: '.'
+}
+
+article#pages-experiences div.content div.left {
+  text-align: right;
+  width: 315px;
+  padding-top: 4px;
+  font-family: Smart;
+  float: left
+}
+
+article#pages-experiences div.content div.left div.date {
+  font-family: Praktika;
+  color: #c8c8c8
+}
+
+article#pages-experiences div.content div.middle {
+  width: 75px;
+  float: left
+}
+
+article#pages-experiences div.content div.middle div.circle div.inner-circle {
+  width: 15px;
+  height: 15px;
+  margin: 2.5px;
+  background: #646464;
+  border-radius: 100%;
+}
+
+article#pages-experiences div.content div.middle div.circle {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin: 0 25px;
+  border: 2.5px solid #646464;
+  background: #fff
+}
+
+article#pages-experiences div.content div.right {
+  float: left;
+  width: 560px;
+  padding-top: 4px;
+  float: right;
+  font-family: Smart;
+}
+
+article#pages-experiences div.content div.right div.description {
+  margin-top: 5px;
+}
+
+article#pages-experiences div.content div.right div.url {
+  font-family: Praktika;
+  color: #c8c8c8
+}
