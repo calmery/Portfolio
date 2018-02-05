@@ -209,6 +209,11 @@ footer div.link a img {
 
 /* Top */
 
+article#pages-top {
+  background: url( ../img/top.png );
+  background-size: cover
+}
+
 article#pages-top div.line#pages-top-top-left {
   top: 0;
   left: 0;
