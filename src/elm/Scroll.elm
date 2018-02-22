@@ -27,10 +27,12 @@ type alias Model =
     }
 
 
+init : ( Model, Cmd Msg )
 init =
-    ( Model (Delta 0 0) [] 0 False 1 "-0px", Cmd.none )
+    Model (Delta 0 0) [] 0 False 1 "-0px" ! []
 
 
+sectionStyle : String -> Attribute Msg
 sectionStyle transformY =
     style
         [ ( "transition", "all 700ms ease" )
@@ -38,6 +40,7 @@ sectionStyle transformY =
         ]
 
 
+articleStyle : Int -> Attribute Msg
 articleStyle top =
     style
         [ ( "position", "fixed" )
@@ -46,6 +49,7 @@ articleStyle top =
         ]
 
 
+pageStyle : Attribute Msg
 pageStyle =
     style
         [ ( "width", "1440px" )
@@ -60,6 +64,7 @@ longTask =
         |> Task.map (always "complete")
 
 
+view : Model -> Html Msg
 view model =
     section [ onWheel Wheel, id "pages", sectionStyle model.transformY ]
         [ article [ class "page", articleStyle 0 ] [ div [ pageStyle ] [ text <| "Section 1 " ++ toString model ] ]
@@ -68,6 +73,7 @@ view model =
         ]
 
 
+getAverage : List Float -> Int -> Int
 getAverage elements number =
     let
         m =
@@ -79,6 +85,7 @@ getAverage elements number =
         ceiling <| (List.foldr (\x y -> x + y) 0 lastElements) / (toFloat number)
 
 
+update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         Reset _ ->
@@ -166,6 +173,7 @@ onWheel message =
     on "wheel" <| Json.map message deltaDecoder
 
 
+main : Program Never Model Msg
 main =
     program
         { init = init
