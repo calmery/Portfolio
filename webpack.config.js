@@ -63,6 +63,7 @@ module.exports = {
     new MinifyPlugin(),
     new CopyWebpackPlugin( [
       { from: resolve( './src/static/img/' ), to: resolve( './dist/resources/img/' ) },
+      { from: resolve( './src/CNAME' ), to: resolve( './dist/' ) },
     ] )
   ],
   output: {
