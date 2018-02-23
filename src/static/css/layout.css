@@ -24,6 +24,10 @@ html, body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Main */
 
 body {
@@ -393,16 +397,15 @@ article.pages-articles div.pages-articles-articles div.article:first-child {
 article.pages-articles div.pages-articles-articles div.article div.title {
   font-size: 15px;
   line-height: 20px;
-  top: 25px;
-  left: 25px;
-  position: absolute;
+  width: 230px;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
 article.pages-articles div.pages-articles-articles div.article div.body {
-  top: 65px;
   width: 230px;
-  left: 25px;
-  position: absolute;
+  margin-top: 20px;
+  margin-left: 25px;
   height: 84px;
   color: #c8c8c8;
   letter-spacing: 0;
@@ -432,7 +435,7 @@ article.pages-articles div.pages-articles-articles div.article div.more {
   top: 50%;
   width: 100%;
   position: absolute;
-  margin-top: -25px
+  margin-top: -25px;
 }
 
 article.pages-articles div.pages-articles-articles div.article div.more img {
