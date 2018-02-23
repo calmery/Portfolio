@@ -94,9 +94,16 @@ export default _ => {
   const scrollPage = element => {
     if( null === element ) return
 
-    const pageId = element.id.slice( 6 )
-    const activeMenu = document.querySelector( `div#primary-${pageId}` )
+    let pageId = element.id.slice( 6 )
+    if( pageId.indexOf( '-' ) !== -1 )
+      pageId = pageId.slice( 0, pageId.indexOf( '-' ) )
+
+    const activeMenu = document.querySelector( `div#primary-${pageId}` ) || document.querySelector( `div#primary-${pageId}-0` )
     setActiveMenu( activeMenu )
+
+    const secondary = document.querySelector( `#pages-${element.id.slice( 6 )} nav.secondary` )
+    if( secondary )
+      secondary.style.marginTop = `-${secondary.offsetHeight/2}px`
 
     applyToEachPage( page => page.classList.remove( 'active' ) )
     element.classList.add( 'active' )
@@ -141,5 +148,10 @@ export default _ => {
     menu.addEventListener( 'click', _ =>
       scrollPage( page )
     )
+  } )
+
+  _ = [].slice.call( document.querySelectorAll( 'nav.secondary div.secondary-menu' ) ).forEach( menu => {
+    const page = document.querySelector( `article#pages-${menu.getAttribute( 'id' ).slice( 9 )}` )
+    menu.addEventListener( 'click', _ => scrollPage( page ) )
   } )
 }

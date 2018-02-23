@@ -105,26 +105,26 @@ nav#primary .menu.active {
   color: #646464;
 }
 
-nav#secondary {
+nav.secondary {
   color: #c8c8c8;
   font-weight: bold;
   top: 50%;
   right: 75px;
   text-align: right;
-  position: fixed;
+  position: absolute;
   z-index: 6;
 }
 
-nav#secondary div#secondary-label {
+nav.secondary div.secondary-label {
   color: #646464;
 }
 
-nav#secondary div#secondary-border {
+nav.secondary div.secondary-border {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-nav#secondary div#secondary-border:after {
+nav.secondary div.secondary-border:after {
   display: block;
   clear: both;
   height: 0;
@@ -132,18 +132,18 @@ nav#secondary div#secondary-border:after {
   content: '.'
 }
 
-nav#secondary div#secondary-border div {
+nav.secondary div.secondary-border div {
   width: 15px;
   height: 1px;
   background: #646464;
   float: right
 }
 
-nav#secondary div.menu {
+nav.secondary div.menu {
   margin-top: 10px;
 }
 
-nav#secondary div.menu:after {
+nav.secondary div.menu:after {
   display: block;
   clear: both;
   height: 0;
@@ -151,12 +151,12 @@ nav#secondary div.menu:after {
   content: '.'
 }
 
-nav#secondary div.menu div.name {
+nav.secondary div.menu div.name {
   float: right;
   color: #c8c8c8;
 }
 
-nav#secondary div.menu div.circle {
+nav.secondary div.menu div.circle {
   float: right;
   width: 5px;
   height: 5px;
@@ -167,11 +167,11 @@ nav#secondary div.menu div.circle {
   margin-left: 10px;
 }
 
-nav#secondary div.menu.active div.name {
+nav.secondary div.menu.active div.name {
   color: #646464;
 }
 
-nav#secondary div.menu.active div.circle {
+nav.secondary div.menu.active div.circle {
   float: right;
   width: 5px;
   height: 5px;
@@ -209,43 +209,43 @@ footer div.link a img {
 
 /* Top */
 
-article#pages-top {
+article.pages-top {
   background: url( ../img/top.png );
   background-size: cover
 }
 
-article#pages-top div.line#pages-top-top-left {
+article.pages-top div.line.pages-top-top-left {
   top: 0;
   left: 0;
   transform: rotate( 0deg );
 }
 
-article#pages-top div.line#pages-top-bottom-left {
+article.pages-top div.line.pages-top-bottom-left {
   bottom: 0;
   left: 0;
   transform: rotate( 270deg );
 }
 
-article#pages-top div.line#pages-top-top-right {
+article.pages-top div.line.pages-top-top-right {
   top: 0;
   right: 0;
   transform: rotate( 90deg );
 }
 
-article#pages-top div.line#pages-top-bottom-right {
+article.pages-top div.line.pages-top-bottom-right {
   bottom: 0;
   right: 0;
   transform: rotate( 180deg );
 }
 
-article#pages-top div.line {
+article.pages-top div.line {
   position: absolute;
   width: 25px;
   height: 25px;
   opacity: .1
 }
 
-article#pages-top div.line div.vertical {
+article.pages-top div.line div.vertical {
   width: 5px;
   height: 25px;
   background: #646464;
@@ -254,7 +254,7 @@ article#pages-top div.line div.vertical {
   position: absolute;
 }
 
-article#pages-top div.line div.horizontal {
+article.pages-top div.line div.horizontal {
   width: 25px;
   height: 5px;
   background: #646464;
@@ -262,7 +262,7 @@ article#pages-top div.line div.horizontal {
   left: 0;
 }
 
-article#pages-top div#pages-top-logo {
+article.pages-top div.pages-top-logo {
   text-align: center;
   width: 100%;
   height: 50px;
@@ -271,16 +271,16 @@ article#pages-top div#pages-top-logo {
   margin-top: -25px;
 }
 
-article#pages-top div#pages-top-logo div#pages-top-logo-image {
+article.pages-top div.pages-top-logo div.pages-top-logo-image {
   height: 20px;
 }
 
-article#pages-top div#pages-top-logo div#pages-top-logo-image img {
+article.pages-top div.pages-top-logo div.pages-top-logo-image img {
   width: 100%;
   height: 100%;
 }
 
-article#pages-top div#pages-top-logo div#pages-top-logo-name {
+article.pages-top div.pages-top-logo div.pages-top-logo-name {
   font-size: 15px;
   line-height: 20px;
   margin-top: 10px;
@@ -288,7 +288,7 @@ article#pages-top div#pages-top-logo div#pages-top-logo-name {
   font-weight: bold;
 }
 
-article#pages-top div#pages-top-urge-scroll {
+article.pages-top div.pages-top-urge-scroll {
   color: #c8c8c8;
   text-align: center;
   font-weight: bold;
@@ -301,13 +301,13 @@ article#pages-top div#pages-top-urge-scroll {
   margin-top: 75px;
 }
 
-article#pages-top div#pages-top-urge-scroll div#pages-top-urge-scroll-image img {
+article.pages-top div.pages-top-urge-scroll div.pages-top-urge-scroll-image img {
   width: 15px;
 }
 
 /* About me */
 
-article#pages-aboutme div#pages-aboutme-container {
+article.pages-aboutme div.pages-aboutme-container {
   padding: 50px;
   width: 380px;
   height: 335px;
@@ -321,52 +321,52 @@ article#pages-aboutme div#pages-aboutme-container {
   box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
 }
 
-article#pages-aboutme div#pages-aboutme-container div#pages-aboutme-name {
+article.pages-aboutme div.pages-aboutme-container div.pages-aboutme-name {
   font-size: 25px;
   line-height: 31px;
 }
 
-article#pages-aboutme div#pages-aboutme-container div#pages-aboutme-screenname {
+article.pages-aboutme div.pages-aboutme-container div.pages-aboutme-screenname {
   font-size: 12px;
 }
 
-article#pages-aboutme div#pages-aboutme-container .label {
+article.pages-aboutme div.pages-aboutme-container .label {
   color: #c8c8c8;
   margin-top: 20px;
 }
 
-article#pages-aboutme div#pages-aboutme-container .text {
+article.pages-aboutme div.pages-aboutme-container .text {
   font-size: 15px;
   line-height: 18px;
 }
 
 /* Articles */
 
-article#pages-articles-container {
+article.pages-articles-container {
   padding: 0 5px;
 }
 
-article#pages-articles div#pages-articles-title {
+article.pages-articles div.pages-articles-title {
   font-size: 25px;
   line-height: 33px;
   font-family: Praktika;
   font-weight: bold;
 }
 
-article#pages-articles div#pages-articles-description {
+article.pages-articles div.pages-articles-description {
   font-family: Praktika;
   font-weight: bold;
   color: #c8c8c8;
 }
 
-article#pages-articles div#pages-articles-articles {
+article.pages-articles div.pages-articles-articles {
   top: 50%;
   height: 210px;
   margin-top: -105px;
   position: absolute;
 }
 
-article#pages-articles div#pages-articles-articles:after {
+article.pages-articles div.pages-articles-articles:after {
   display: block;
   clear: both;
   height: 0;
@@ -374,7 +374,7 @@ article#pages-articles div#pages-articles-articles:after {
   content: '.'
 }
 
-article#pages-articles div#pages-articles-articles div.article {
+article.pages-articles div.pages-articles-articles div.article {
   width: 280px;
   height: 210px;
   box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
@@ -386,11 +386,11 @@ article#pages-articles div#pages-articles-articles div.article {
   position: relative;
 }
 
-article#pages-articles div#pages-articles-articles div.article:first-child {
+article.pages-articles div.pages-articles-articles div.article:first-child {
   margin-left: 0
 }
 
-article#pages-articles div#pages-articles-articles div.article div.title {
+article.pages-articles div.pages-articles-articles div.article div.title {
   font-size: 15px;
   line-height: 20px;
   top: 25px;
@@ -398,7 +398,7 @@ article#pages-articles div#pages-articles-articles div.article div.title {
   position: absolute;
 }
 
-article#pages-articles div#pages-articles-articles div.article div.body {
+article.pages-articles div.pages-articles-articles div.article div.body {
   top: 65px;
   width: 230px;
   left: 25px;
@@ -408,7 +408,7 @@ article#pages-articles div#pages-articles-articles div.article div.body {
   letter-spacing: 0;
 }
 
-article#pages-articles div#pages-articles-articles div.article div.date {
+article.pages-articles div.pages-articles-articles div.article div.date {
   color: #c8c8c8;
   bottom: 25px;
   left: 25px;
@@ -417,17 +417,17 @@ article#pages-articles div#pages-articles-articles div.article div.date {
   font-weight: bold;
 }
 
-article#pages-articles div#pages-articles-articles div.article div.continue {
+article.pages-articles div.pages-articles-articles div.article div.continue {
   bottom: 25px;
   right: 25px;
   position: absolute;
 }
 
-article#pages-articles div#pages-articles-articles div.article span.p {
+article.pages-articles div.pages-articles-articles div.article span.p {
   font-family: Praktika
 }
 
-article#pages-articles div#pages-articles-articles div.article div.more {
+article.pages-articles div.pages-articles-articles div.article div.more {
   text-align: center;
   top: 50%;
   width: 100%;
@@ -435,35 +435,35 @@ article#pages-articles div#pages-articles-articles div.article div.more {
   margin-top: -25px
 }
 
-article#pages-articles div#pages-articles-articles div.article div.more img {
+article.pages-articles div.pages-articles-articles div.article div.more img {
   height: 30px
 }
 
-article#pages-articles div#pages-articles-articles div.article div.more div.text {
+article.pages-articles div.pages-articles-articles div.article div.more div.text {
   font-family: Praktika;
 }
 
 /* Products */
 
-article#pages-products div.information {
+article.pages-products div.information {
   top: 0;
   left: 0;
   position: absolute;
   font-family: Praktika
 }
 
-article#pages-products div.information div.name {
+article.pages-products div.information div.name {
   font-size: 25px;
   line-height: 31px;
 }
 
-article#pages-products div.information div.date {
+article.pages-products div.information div.date {
   font-size: 15px;
   line-height: 18px;
   color: #c8c8c8
 }
 
-article#pages-products div.description {
+article.pages-products div.description {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -471,11 +471,11 @@ article#pages-products div.description {
   width: 300px;
 }
 
-article#pages-products div.description span.p {
+article.pages-products div.description span.p {
   font-family: Praktika
 }
 
-article#pages-products div.repository {
+article.pages-products div.repository {
   bottom: 0;
   right: 0;
   position: absolute;
@@ -483,11 +483,11 @@ article#pages-products div.repository {
   text-align: right;
 }
 
-article#pages-products div.repository div.url {
+article.pages-products div.repository div.url {
   color: #c8c8c8
 }
 
-article#pages-products div.mockup {
+article.pages-products div.mockup {
   width: 760px;
   height: 345px;
   top: 50%;
@@ -497,7 +497,7 @@ article#pages-products div.mockup {
   margin-left: -380px;
 }
 
-article#pages-products div.mockup:after {
+article.pages-products div.mockup:after {
   display: block;
   clear: both;
   height: 0;
@@ -505,7 +505,7 @@ article#pages-products div.mockup:after {
   content: '.'
 }
 
-article#pages-products div.mockup div.pc {
+article.pages-products div.mockup div.pc {
   width: 560px;
   height: 345px;
   box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
@@ -513,19 +513,19 @@ article#pages-products div.mockup div.pc {
   border-radius: 3px;
 }
 
-article#pages-products div.mockup div.pc div.header {
+article.pages-products div.mockup div.pc div.header {
   width: 560px;
   height: 30px;
   border-radius: 3px 3px 0 0;
   background: linear-gradient( #FFFFFF, #FAFAFA );
 }
 
-article#pages-products div.mockup div.pc div.header div.buttons {
+article.pages-products div.mockup div.pc div.header div.buttons {
   padding: 11px 0;
   padding-left: 10px;
 }
 
-article#pages-products div.mockup div.pc div.header div.buttons div.button {
+article.pages-products div.mockup div.pc div.header div.buttons div.button {
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -533,23 +533,23 @@ article#pages-products div.mockup div.pc div.header div.buttons div.button {
   float: left;
 }
 
-article#pages-products div.mockup div.pc div.header div.buttons div.button:first-child {
+article.pages-products div.mockup div.pc div.header div.buttons div.button:first-child {
   margin-left: 0;
 }
 
-article#pages-products div.mockup div.pc div.header div.buttons div.button.red {
+article.pages-products div.mockup div.pc div.header div.buttons div.button.red {
   background: #FC605C;
 }
 
-article#pages-products div.mockup div.pc div.header div.buttons div.button.yellow {
+article.pages-products div.mockup div.pc div.header div.buttons div.button.yellow {
   background: #FDBC40
 }
 
-article#pages-products div.mockup div.pc div.header div.buttons div.button.green {
+article.pages-products div.mockup div.pc div.header div.buttons div.button.green {
   background: #34C749
 }
 
-article#pages-products div.mockup div.pc div.screen {
+article.pages-products div.mockup div.pc div.screen {
   width: 560px;
   height: 315px;
   background: linear-gradient( to right bottom, #FFFFFF, #F5F5F5 );
@@ -558,7 +558,7 @@ article#pages-products div.mockup div.pc div.screen {
   position: relative;
 }
 
-article#pages-products div.mockup div.pc div.screen img {
+article.pages-products div.mockup div.pc div.screen img {
   width: 100%;
   height: 100%;
   top: 0;
@@ -569,7 +569,7 @@ article#pages-products div.mockup div.pc div.screen img {
   margin: 0;
 }
 
-article#pages-products div.mockup div.pc div.screen div {
+article.pages-products div.mockup div.pc div.screen div {
   width: 100%;
   font-family: Praktika;
   color: #c8c8c8;
@@ -582,7 +582,7 @@ article#pages-products div.mockup div.pc div.screen div {
 
 /* SP */
 
-article#pages-products div.mockup div.sp {
+article.pages-products div.mockup div.sp {
   width: 150px;
   box-shadow: 0 5px 10px rgba( 0, 0, 0, .05 );
   float: left;
@@ -591,7 +591,7 @@ article#pages-products div.mockup div.sp {
   margin-left: 50px;
 }
 
-article#pages-products div.mockup div.sp div.statusbar {
+article.pages-products div.mockup div.sp div.statusbar {
   background: #fff;
   height: 5px;
   padding: 2.5px 5px;
@@ -600,20 +600,20 @@ article#pages-products div.mockup div.sp div.statusbar {
 }
 
 
-article#pages-products div.mockup div.sp div.statusbar img {
+article.pages-products div.mockup div.sp div.statusbar img {
   height: 5px;
   float: left
 }
 
-article#pages-products div.mockup div.sp div.statusbar img.icon-wifi {
+article.pages-products div.mockup div.sp div.statusbar img.icon-wifi {
   margin-left: 2.5px
 }
 
-article#pages-products div.mockup div.sp div.statusbar img.icon-battery {
+article.pages-products div.mockup div.sp div.statusbar img.icon-battery {
   float: right
 }
 
-article#pages-products div.mockup div.sp div.screen {
+article.pages-products div.mockup div.sp div.screen {
   width: 150px;
   height: 258.8px;
   background: linear-gradient( to right bottom, #FFFFFF, #F5F5F5 );
@@ -621,7 +621,7 @@ article#pages-products div.mockup div.sp div.screen {
   position: relative;
 }
 
-article#pages-products div.mockup div.sp div.screen img {
+article.pages-products div.mockup div.sp div.screen img {
   width: 100%;
   height: 100%;
   top: 0;
@@ -632,7 +632,7 @@ article#pages-products div.mockup div.sp div.screen img {
   margin: 0;
 }
 
-article#pages-products div.mockup div.sp div.screen div {
+article.pages-products div.mockup div.sp div.screen div {
   width: 150px;
   font-family: Praktika;
   color: #c8c8c8;
@@ -646,7 +646,7 @@ article#pages-products div.mockup div.sp div.screen div {
 
 /* Experiences */
 
-article#pages-experiences div#pages-experiences-line {
+article.pages-experiences div.pages-experiences-line {
   top: 10px;
   left: 350px;
   background: #646464;
@@ -656,7 +656,7 @@ article#pages-experiences div#pages-experiences-line {
   height: calc( 100% - 10px - 20px );
 }
 
-article#pages-experiences div#pages-experiences-line-bottom {
+article.pages-experiences div.pages-experiences-line-bottom {
   bottom: 0;
   left: 350px;
   background: #646464;
@@ -666,11 +666,11 @@ article#pages-experiences div#pages-experiences-line-bottom {
   height: 15px;
 }
 
-article#pages-experiences div#pages-experiences-contents div.content {
+article.pages-experiences div.pages-experiences-contents div.content {
   margin-bottom: 50px;
 }
 
-article#pages-experiences div#pages-experiences-contents div.content:after {
+article.pages-experiences div.pages-experiences-contents div.content:after {
   display: block;
   clear: both;
   height: 0;
@@ -678,7 +678,7 @@ article#pages-experiences div#pages-experiences-contents div.content:after {
   content: '.'
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.left {
+article.pages-experiences div.pages-experiences-contents div.content div.left {
   text-align: right;
   width: 315px;
   padding-top: 4px;
@@ -686,17 +686,17 @@ article#pages-experiences div#pages-experiences-contents div.content div.left {
   float: left
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.left div.date {
+article.pages-experiences div.pages-experiences-contents div.content div.left div.date {
   font-family: Praktika;
   color: #c8c8c8
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.middle {
+article.pages-experiences div.pages-experiences-contents div.content div.middle {
   width: 75px;
   float: left
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.middle div.circle div.inner-circle {
+article.pages-experiences div.pages-experiences-contents div.content div.middle div.circle div.inner-circle {
   width: 15px;
   height: 15px;
   margin: 2.5px;
@@ -704,7 +704,7 @@ article#pages-experiences div#pages-experiences-contents div.content div.middle 
   border-radius: 100%;
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.middle div.circle {
+article.pages-experiences div.pages-experiences-contents div.content div.middle div.circle {
   border-radius: 100%;
   width: 20px;
   height: 20px;
@@ -713,7 +713,7 @@ article#pages-experiences div#pages-experiences-contents div.content div.middle 
   background: #fff
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.right {
+article.pages-experiences div.pages-experiences-contents div.content div.right {
   float: left;
   width: 560px;
   padding-top: 4px;
@@ -721,29 +721,29 @@ article#pages-experiences div#pages-experiences-contents div.content div.right {
   font-family: Smart;
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.right div.description {
+article.pages-experiences div.pages-experiences-contents div.content div.right div.description {
   margin-top: 5px;
 }
 
-article#pages-experiences div#pages-experiences-contents div.content div.right div.url {
+article.pages-experiences div.pages-experiences-contents div.content div.right div.url {
   font-family: Praktika;
   color: #c8c8c8
 }
 
 /* Archives and Credit */
 
-article#pages-archives div#pages-archives-title, article#pages-credit div#pages-credit-title {
+article.pages-archives div.pages-archives-title, article.pages-credit div.pages-credit-title {
   font-size: 25px;
   line-height: 33px;
   font-family: Praktika;
   font-weight: bold;
 }
 
-article#pages-archives div#pages-archives-container, article#pages-credit div#pages-credit-container {
+article.pages-archives div.pages-archives-container, article.pages-credit div.pages-credit-container {
   margin-top: 50px;
 }
 
-article#pages-archives div#pages-archives-container:after, article#pages-credit div#pages-credit-container:after {
+article.pages-archives div.pages-archives-container:after, article.pages-credit div.pages-credit-container:after {
   display: block;
   clear: both;
   height: 0;
@@ -751,25 +751,25 @@ article#pages-archives div#pages-archives-container:after, article#pages-credit 
   content: '.'
 }
 
-article#pages-archives div#pages-archives-container div.left, article#pages-credit div#pages-credit-container div.left {
+article.pages-archives div.pages-archives-container div.left, article.pages-credit div.pages-credit-container div.left {
   width: 450px;
   float: left;
 }
 
-article#pages-archives div#pages-archives-container div.right, article#pages-credit div#pages-credit-container div.right {
+article.pages-archives div.pages-archives-container div.right, article.pages-credit div.pages-credit-container div.right {
   width: 450px;
   float: right;
 }
 
-article#pages-archives div#pages-archives-container div.content, article#pages-credit div#pages-credit-container div.content {
+article.pages-archives div.pages-archives-container div.content, article.pages-credit div.pages-credit-container div.content {
   width: 450px;
   margin-bottom: 20px;
 }
 
-article#pages-archives div#pages-archives-container div.content div.url, article#pages-credit div#pages-credit-container div.content div.url {
+article.pages-archives div.pages-archives-container div.content div.url, article.pages-credit div.pages-credit-container div.content div.url {
   color: #c8c8c8;
 }
 
-article#pages-archives div#pages-archives-container div.content span.p, article#pages-credit div#pages-credit-container div.content span.p {
+article.pages-archives div.pages-archives-container div.content span.p, article.pages-credit div.pages-credit-container div.content span.p {
   font-family: Praktika
 }
