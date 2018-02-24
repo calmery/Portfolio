@@ -11,6 +11,8 @@ type alias Product =
     , description : String
     , repository : String
     , url : String
+    , screenshopPc : Maybe String
+    , screenshopSp : Maybe String
     }
 
 
@@ -37,10 +39,13 @@ createProductPage secondaryMenu i p =
                             ]
                         ]
                     , div [ class "screen" ]
-                        [ div []
-                            [ text "NO IMAGE AVAILABLE" ]
-                        , img [ src "" ]
-                            []
+                        [ case p.screenshopPc of
+                            Just url ->
+                                img [ src <| "resources/img/products/" ++ url ] []
+
+                            Nothing ->
+                                div []
+                                    [ text "NO IMAGE AVAILABLE" ]
                         ]
                     ]
                 , div [ class "sp" ]
@@ -53,14 +58,17 @@ createProductPage secondaryMenu i p =
                             []
                         ]
                     , div [ class "screen" ]
-                        [ div []
-                            [ text "NO IMAGE"
-                            , br []
-                                []
-                            , text "AVAILABLE"
-                            ]
-                        , img [ src "" ]
-                            []
+                        [ case p.screenshopSp of
+                            Just url ->
+                                img [ src <| "resources/img/products/" ++ url ] []
+
+                            Nothing ->
+                                div []
+                                    [ text "NO IMAGE"
+                                    , br []
+                                        []
+                                    , text "AVAILABLE"
+                                    ]
                         ]
                     ]
                 ]

@@ -559,14 +559,11 @@ article.pages-products div.mockup div.pc div.screen {
   border-radius: 0 0 3px 3px;
   text-align: center;
   position: relative;
+  text-align: center;
 }
 
 article.pages-products div.mockup div.pc div.screen img {
-  width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
   border-radius: 0 0 3px 3px;
   padding: 0;
   margin: 0;
