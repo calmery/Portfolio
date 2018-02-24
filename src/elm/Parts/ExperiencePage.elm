@@ -19,8 +19,8 @@ type alias Experiences =
     }
 
 
-createExperiencesPage : Int -> Experiences -> Html msg
-createExperiencesPage i experiences =
+createExperiencesPage : List String -> Int -> Experiences -> Html msg
+createExperiencesPage secondaryMenu i experiences =
     article [ class "page", id <| "pages-experiences-" ++ (toString i), class "pages-experiences" ]
         [ div [ class "main" ]
             [ div [ class "pages-experiences-line" ]
@@ -56,5 +56,5 @@ createExperiencesPage i experiences =
                     experiences.experiences
                 )
             ]
-        , createSecondaryMenu "experiences" [ "PAGE 0", "PAGE 1" ] i
+        , createSecondaryMenu "experiences" secondaryMenu i
         ]

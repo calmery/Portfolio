@@ -21,8 +21,8 @@ type alias Articles =
     }
 
 
-createArticlePage : Int -> Articles -> Html msg
-createArticlePage i articles =
+createArticlePage : List String -> Int -> Articles -> Html msg
+createArticlePage secondaryMenu i articles =
     article [ class "page", id <| "pages-articles-" ++ (toString i), class "pages-articles" ]
         [ div [ class "main" ]
             [ div [ class "pages-articles-container" ]
@@ -64,5 +64,5 @@ createArticlePage i articles =
                     )
                 ]
             ]
-        , createSecondaryMenu "articles" [ "QIITA", "HATENA BLOG" ] i
+        , createSecondaryMenu "articles" secondaryMenu i
         ]

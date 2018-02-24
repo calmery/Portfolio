@@ -28,8 +28,8 @@ createArchiveView archive =
         ]
 
 
-createArchivesPage : Int -> Archives -> Html msg
-createArchivesPage i archives =
+createArchivesPage : List String -> Int -> Archives -> Html msg
+createArchivesPage secondaryMenu i archives =
     article [ class "page", id <| "pages-archives-" ++ (toString i), class "pages-archives" ]
         [ div [ class "main" ]
             [ div [ class "pages-archives-title" ]
@@ -41,5 +41,5 @@ createArchivesPage i archives =
                     (List.map createArchiveView archives.rightContents)
                 ]
             ]
-        , createSecondaryMenu "archives" [ "PAGE 0", "PAGE 1" ] i
+        , createSecondaryMenu "archives" secondaryMenu i
         ]

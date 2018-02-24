@@ -14,8 +14,8 @@ type alias Product =
     }
 
 
-createProductPage : Int -> Product -> Html msg
-createProductPage i p =
+createProductPage : List String -> Int -> Product -> Html msg
+createProductPage secondaryMenu i p =
     article [ class "page", id <| "pages-products-" ++ (toString i), class "pages-products" ]
         [ div [ class "main" ]
             [ div [ class "information" ]
@@ -74,5 +74,5 @@ createProductPage i p =
                     [ text p.url ]
                 ]
             ]
-        , createSecondaryMenu "products" [ "PATHFINDER", "PORCH", "CALMERY.ME", "PAWOPY", "MORIMORIN", "FLOWERTALK", "SPOTLIGHT", "MIZUDERU", "OCTOCATCHER", "KNOKIMOCHI" ] i
+        , createSecondaryMenu "products" secondaryMenu i
         ]
