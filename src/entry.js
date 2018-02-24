@@ -14,3 +14,7 @@ app.ports.ready.subscribe( _ => {
   fullPage()
   updatePosition()
 } )
+
+app.ports.setTitle.subscribe( title =>
+  document.title = title
+)

@@ -21,8 +21,7 @@ creditLeft =
 
 creditRight : List ( String, String )
 creditRight =
-    [
-    ]
+    []
 
 
 creditPages : List (Html msg)

@@ -2,7 +2,7 @@ module Main exposing (..)
 
 import Html exposing (Html, program, section)
 import Html.Attributes exposing (id)
-import Port exposing (ready)
+import Port exposing (ready, setTitle)
 import Parts.Header exposing (header)
 import Parts.Nav exposing (nav)
 import Parts.Footer exposing (footer)
@@ -45,7 +45,7 @@ view model =
 main : Program Never Model msg
 main =
     program
-        { init = "" ! [ ready () ]
+        { init = "" ! [ ready (), setTitle "Portfolio - Calmery.me" ]
         , view = view
         , update = (\msg model -> model ! [])
         , subscriptions = always Sub.none
