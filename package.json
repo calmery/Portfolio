@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "rimraf dist && webpack",
-    "prettify": "elm-format src/elm --yes"
+    "prettify": "elm-format src/elm --yes",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "babel-minify-webpack-plugin": "^0.2.0",
@@ -12,6 +13,7 @@
     "elm-webpack-loader": "^4.4.0",
     "extract-loader": "^1.0.2",
     "file-loader": "^1.1.6",
+    "gh-pages": "^1.1.0",
     "html-loader": "^0.5.5",
     "rimraf": "^2.6.2",
     "style-loader": "^0.20.1",
