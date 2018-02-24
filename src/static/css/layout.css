@@ -424,6 +424,7 @@ article.pages-articles div.pages-articles-articles div.article div.continue {
   bottom: 25px;
   right: 25px;
   position: absolute;
+  color: #646464;
 }
 
 article.pages-articles div.pages-articles-articles div.article span.p {
@@ -436,6 +437,10 @@ article.pages-articles div.pages-articles-articles div.article div.more {
   width: 100%;
   position: absolute;
   margin-top: -25px;
+}
+
+article.pages-articles div.pages-articles-articles div.article div.more div.text {
+  color: #646464;
 }
 
 article.pages-articles div.pages-articles-articles div.article div.more img {
@@ -471,7 +476,7 @@ article.pages-products div.description {
   left: 0;
   position: absolute;
   font-family: Smart;
-  width: 300px;
+  width: 400px;
 }
 
 article.pages-products div.description span.p {
@@ -484,6 +489,11 @@ article.pages-products div.repository {
   position: absolute;
   font-family: Praktika;
   text-align: right;
+}
+
+article.pages-products div.repository div.title {
+  color: #646464;
+  font-family: Praktika, Smart;
 }
 
 article.pages-products div.repository div.url {

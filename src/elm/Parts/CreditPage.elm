@@ -3,44 +3,49 @@ module Parts.CreditPage exposing (creditPage)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Parts.SecondaryMenu exposing (createSecondaryMenu)
+import Tuple
 
 
-creditPage : Html msg
-creditPage =
+creditPage : List String -> Int -> List ( String, String ) -> List ( String, String ) -> Html msg
+creditPage secondaryMenu i creditLeft creditRight =
     article [ class "page", id "pages-credit-0", class "pages-credit" ]
         [ div [ class "main" ]
             [ div [ class "pages-credit-title" ]
                 [ text "CREDIT" ]
             , div [ class "pages-credit-container" ]
                 [ div [ class "left" ]
-                    [ div [ class "content" ]
-                        [ div []
-                            [ span [ class "p" ]
-                                [ text "iOS 8 Status Bars Sketch Resource by Aubrey Johnson" ]
-                            ]
-                        , div [ class "url" ]
-                            [ text "https://www.sketchappsources.com/free-source/1112-ios8-status-bar-sketch-freebie-resource.html" ]
-                        ]
-                    ]
+                    (List.map
+                        (\credit ->
+                            div [ class "content" ]
+                                [ div []
+                                    [ span [ class "p" ]
+                                        [ text <| Tuple.first credit ]
+                                    ]
+                                , a [ href <| Tuple.second credit, target "_blank" ]
+                                    [ div [ class "url" ]
+                                        [ text <| Tuple.second credit ]
+                                    ]
+                                ]
+                        )
+                        creditLeft
+                    )
                 , div [ class "right" ]
-                    [ div [ class "content" ]
-                        [ div []
-                            [ span [ class "p" ]
-                                [ text "iOS 8 Status Bars Sketch Resource by Aubrey Johnson" ]
-                            ]
-                        , div [ class "url" ]
-                            [ text "https://www.sketchappsources.com/free-source/1112-ios8-status-bar-sketch-freebie-resource.html" ]
-                        ]
-                    , div [ class "content" ]
-                        [ div []
-                            [ span [ class "p" ]
-                                [ text "iOS 8 Status Bars Sketch Resource by Aubrey Johnson" ]
-                            ]
-                        , div [ class "url" ]
-                            [ text "https://www.sketchappsources.com/free-source/1112-ios8-status-bar-sketch-freebie-resource.html" ]
-                        ]
-                    ]
+                    (List.map
+                        (\credit ->
+                            div [ class "content" ]
+                                [ div []
+                                    [ span [ class "p" ]
+                                        [ text <| Tuple.first credit ]
+                                    ]
+                                , a [ href <| Tuple.second credit, target "_blank" ]
+                                    [ div [ class "url" ]
+                                        [ text <| Tuple.second credit ]
+                                    ]
+                                ]
+                        )
+                        creditRight
+                    )
                 ]
             ]
-        , createSecondaryMenu "credit" [ "0" ] 0
+        , createSecondaryMenu "credit" secondaryMenu i
         ]

@@ -42,7 +42,7 @@ createArticlePage secondaryMenu i articles =
                                     ]
                                 , div [ class "date" ]
                                     [ text aa.date ]
-                                , a [ href aa.url ]
+                                , a [ href aa.url, target "_blank" ]
                                     [ div [ class "continue" ]
                                         [ text "続きを読む" ]
                                     ]
@@ -52,7 +52,7 @@ createArticlePage secondaryMenu i articles =
                      )
                         ++ [ div [ class "article" ]
                                 [ div [ class "more" ]
-                                    [ a [ href articles.url ]
+                                    [ a [ href articles.url, target "_blank" ]
                                         [ img [ src "resources/img/href.svg" ]
                                             []
                                         , div [ class "text" ]

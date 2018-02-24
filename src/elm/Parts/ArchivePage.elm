@@ -23,8 +23,10 @@ createArchiveView archive =
         [ div []
             [ text archive.title
             ]
-        , div [ class "url" ]
-            [ text archive.url ]
+        , a [ href archive.url, target "_blank" ]
+            [ div [ class "url" ]
+                [ text archive.url ]
+            ]
         ]
 
 

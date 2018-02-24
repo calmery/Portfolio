@@ -75,11 +75,13 @@ createProductPage secondaryMenu i p =
             , div [ class "description" ]
                 [ text p.description
                 ]
-            , div [ class "repository" ]
-                [ div []
-                    [ text p.repository ]
-                , div [ class "url" ]
-                    [ text p.url ]
+            , a [ href p.url, target "_blank" ]
+                [ div [ class "repository" ]
+                    [ div [ class "title" ]
+                        [ text p.repository ]
+                    , div [ class "url" ]
+                        [ text p.url ]
+                    ]
                 ]
             ]
         , createSecondaryMenu "products" secondaryMenu i
