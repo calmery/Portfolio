@@ -39,7 +39,7 @@ topPage =
                         []
                     ]
                 , div [ class "pages-top-logo-name" ]
-                    [ text "PATHFINDER" ]
+                    [ text "PORTFOLIO" ]
                 ]
             , div [ class "pages-top-urge-scroll" ]
                 [ text "SCROLL              "

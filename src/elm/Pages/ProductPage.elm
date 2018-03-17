@@ -6,12 +6,12 @@ import Parts.ProductPage exposing (Product, createProductPage)
 
 secondaryMenu : List String
 secondaryMenu =
-    [ "PATHFINDER", "PORCH", "CALMERY.ME", "PAWOPY", "MORIMORIN", "FLOWERTALK", "SANDPIT", "SPOTLIGHT", "MIZUDERU", "OCTOCATCHER", "KINOKIMOCHI", "GOOCH", "REAL TIME CHAT" ]
+    [ "PORTFOLIO", "PORCH", "CALMERY.ME", "PAWOPY", "MORIMORIN", "FLOWERTALK", "SANDPIT", "SPOTLIGHT", "MIZUDERU", "OCTOCATCHER", "KINOKIMOCHI", "GOOCH", "REAL TIME CHAT" ]
 
 
 productPages : List (Html msg)
 productPages =
-    [ createProductPage secondaryMenu 0 <| Product "PATHFINDER" "2018" "今までの活動をまとめました" "calmery/Portfolio" "https://github.com/calmery/Portfolio" (Just "pathfinder.png") Nothing
+    [ createProductPage secondaryMenu 0 <| Product "PORTFOLIO" "2018" "今までの活動をまとめました" "calmery/Portfolio" "https://github.com/calmery/Portfolio" (Just "portfolio.png") Nothing
     , createProductPage secondaryMenu 1 <| Product "PORCH" "2018" "WebRTC を使用したチャットを行うことができる" "calmery/Porch" "https://github.com/calmery/Porch" (Just "porch.png") (Just "porch-sp.png")
     , createProductPage secondaryMenu 2 <| Product "CALMERY.ME" "2017" "リンクをまとめました" "calmery/calmery.me" "https://github.com/calmery/calmery.me" (Just "calmeryme.png") Nothing
     , createProductPage secondaryMenu 3 <| Product "PAWOPY" "2017" "A Python wrapper for the Mastodon API like tweepy" "calmery/Pawopy" "https://github.com/calmery/Pawopy" Nothing Nothing

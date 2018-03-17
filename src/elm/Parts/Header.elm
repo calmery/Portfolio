@@ -12,5 +12,5 @@ header =
                 []
             ]
         , div [ id "header-name" ]
-            [ text "PATHFINDER" ]
+            [ text "PORTFOLIO" ]
         ]
