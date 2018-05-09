@@ -13,7 +13,7 @@ productPages : List (Html msg)
 productPages =
     [ createProductPage secondaryMenu 0 <| Product "PORTFOLIO" "2018" "今までの活動をまとめました" "calmery/Portfolio" "https://github.com/calmery/Portfolio" (Just "portfolio.png") Nothing
     , createProductPage secondaryMenu 1 <| Product "PORCH" "2018" "WebRTC を使用したチャットを行うことができる" "calmery/Porch" "https://github.com/calmery/Porch" (Just "porch.png") (Just "porch-sp.png")
-    , createProductPage secondaryMenu 2 <| Product "CALMERY.ME" "2017" "リンクをまとめました" "calmery/Calmery.me" "https://github.com/calmery/calmery.me" (Just "calmeryme.png") Nothing
+    , createProductPage secondaryMenu 2 <| Product "CALMERY.ME" "2017" "リンクをまとめました" "calmery/Calmery.me" "https://github.com/calmery/Calmery.me" (Just "calmeryme.png") Nothing
     , createProductPage secondaryMenu 3 <| Product "PAWOPY" "2017" "A Python wrapper for the Mastodon API like tweepy" "calmery/Pawopy" "https://github.com/calmery/Pawopy" Nothing Nothing
     , createProductPage secondaryMenu 4 <| Product "MORIMORIN" "2016" "現在地から周辺の地形を生成した 3D マップ上に，作業者の位置を確認することができる" "MORIMORIN – 森HACK" "http://mori-hack.com/portfolio/morimorin/" (Just "morimorin.png") Nothing
     , createProductPage secondaryMenu 5 <| Product "FLOWERTALK" "2016" "お花とお話しする" "Flower Talk | Devpost" "https://devpost.com/software/ks_1604-w9cp28" Nothing Nothing
