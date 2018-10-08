@@ -49,7 +49,9 @@ createExperiencesPage secondaryMenu i experiences =
                                 , div [ class "description" ]
                                     [ text experience.description ]
                                 , div [ class "url" ]
-                                    [ text experience.url ]
+                                    [ a [ href experience.url ]
+                                        [ text experience.url ]
+                                    ]
                                 ]
                             ]
                     )

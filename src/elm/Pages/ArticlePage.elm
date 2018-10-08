@@ -17,8 +17,8 @@ articlePages =
             , Article "ElmとElectronでデスクトップアプリを作ってみた" "これは Elm Advent Calendar 2017 の 15 日目の記事です．はじめに Elm と Electron を使って Twitter のハッシュタグである #elm をストリーミングする…" "Dec. 15, 2017" "https://qiita.com/calmery/items/b80ee5a9c3aa0b268d02"
             ]
     , createArticlePage secondaryMenu 1 <|
-        Articles "HATENA BLOG" "http://calmery.hatenablog.com" 34 <|
-            [ Article "LINEの40万インターンに参加してきた" "LINE Summer Internship 2017 のエンジニア就業コース，通称 40 万インターンに参加してきた．詳しくは LINE株式会社 | インターンシップ 2017 エンジニア就…" "Sep. 3, 2017" "http://calmery.hatenablog.com/entry/2017/09/03/190002"
-            , Article "ピクシブの春インターンに参加してきた" "ピクシブ株式会社で行われた pixiv SPRING BOOT CAMP 2018 に参加してきた．pixiv SPRING BOOT CAMP 2018 とは 圧倒的猛者になれる．この pixiv SP…" "Mar. 7, 2018" "http://calmery.hatenablog.com/entry/2018/03/07/123812"
+        Articles "HATENA BLOG" "http://calmery.hatenablog.com" 37 <|
+            [ Article "メルカリのインターンシップに行ってきた" "夏休み中の 1 ヶ月間，メルカリの Summer Internship 2018 に行ってきた．メルカリがどのような会社で，どのような働き方をしているのか知ることが…" "Oct. 6, 2018" "http://calmery.hatenablog.com/entry/2018/10/06/121419"
+            , Article "Mint を試してみた" "見かけたので試してみた．メモ．Mint とは 再利用可能なコンポーネント スタイリング ルーティング グローバル，ローカルの状態のハンドリング 失敗する可能性…" "Aug. 5, 2018" "http://calmery.hatenablog.com/entry/2018/08/05/032432"
             ]
     ]

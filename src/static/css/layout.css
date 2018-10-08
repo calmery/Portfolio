@@ -735,7 +735,7 @@ article.pages-experiences div.pages-experiences-contents div.content div.right d
   margin-top: 5px;
 }
 
-article.pages-experiences div.pages-experiences-contents div.content div.right div.url {
+article.pages-experiences div.pages-experiences-contents div.content div.right div.url a {
   font-family: Praktika;
   color: #c8c8c8
 }
